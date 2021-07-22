@@ -9,6 +9,7 @@ import {
   makeStyles,
   Typography,
 } from "@material-ui/core";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { REMOVE_BASKET } from "../redux/types";
@@ -28,7 +29,7 @@ const HeaderCardItem = ({ item }) => {
     <Card title="Sepetim">
       <CardHeader title={item.name} />
       <CardActionArea>
-        <img src={item.image} className={classes.mediaImage} />
+        <Image src={item.image} width={100} height={100} />
         <CardContent>
           <Typography>{item.price}₺</Typography>
           <Typography>Adet : {item.quantity}</Typography>

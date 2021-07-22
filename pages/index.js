@@ -5,6 +5,7 @@ import { Fragment, useEffect } from "react";
 import { useSelector } from "react-redux";
 import AppBarHeader from "../components/header";
 import styles from "../styles/Home.module.scss";
+import Products from "./products";
 const Home = (props) => {
   console.log("propsss", props);
   const token = useSelector((state) => state.userReducer.token);
@@ -16,7 +17,7 @@ const Home = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {token ? (
-        <AuthHome />
+        <Products />
       ) : (
         <Fragment>
           <AppBarHeader />

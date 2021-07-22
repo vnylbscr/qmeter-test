@@ -109,7 +109,7 @@ const AppBarHeader = ({ authorized }) => {
                 {basket.length > 0 ? (
                   <Fragment>
                     {basket.map((item) => (
-                      <HeaderCardItem item={item} />
+                      <HeaderCardItem key={item.id} item={item} />
                     ))}
                     <Grid
                       xs={12}

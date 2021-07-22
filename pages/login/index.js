@@ -65,7 +65,7 @@ const Login = () => {
         item
       >
         <Typography variant="h4" style={{ color: "white" }}>
-          QMeter Food App'e Giriş Yap
+          QMeter Food Appe Giriş Yap
         </Typography>
         <Divider style={{ width: "100%" }} />
         <Grid
