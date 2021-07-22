@@ -1,0 +1,40 @@
+.container {
+  height: 100%;
+  max-width: 100%;
+  .bgImage {
+    background-image: url("https://images.hdqwalls.com/download/shopping-district-4k-0w-1920x1080.jpg");
+    width: 100%;
+    height: calc(100% - 60px);
+    background-size: cover;
+    // filter: blur(2px);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .titleContainer {
+      width: 50%;
+      height: 50%;
+      padding: 25px;
+      border: 2px solid whitesmoke;
+      display: flex;
+      justify-content: center;
+      border-radius: 20px;
+      align-items: center;
+      .title {
+        font-size: 70px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+        transition: all 0.5s;
+        color: white;
+        &:hover {
+          transform: scale(1.1);
+          color: chocolate;
+        }
+        .subtitle {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
