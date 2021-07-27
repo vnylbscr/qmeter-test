@@ -3,7 +3,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  Button: {
     height: 80,
     color: "#fff",
   },
